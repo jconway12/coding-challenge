@@ -1,6 +1,6 @@
 import {RECEIVE_ITEMS, RECEIVE_ITEM, REMOVE_ITEM} from '../actions/item_actions';
 
-const itemReducer = (state = {}, action) => {
+const itemsReducer = (state = {}, action) => {
     Object.freeze(state);
     switch(action.type) {
         case RECEIVE_ITEMS: {
@@ -18,3 +18,5 @@ const itemReducer = (state = {}, action) => {
          return state;
     }
 }
+
+export default itemsReducer;

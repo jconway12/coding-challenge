@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_07_190114) do
+ActiveRecord::Schema.define(version: 2019_11_07_193758) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,19 @@ ActiveRecord::Schema.define(version: 2019_11_07_190114) do
     t.string "title", null: false
     t.string "color", null: false
     t.string "style", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "season_tags", force: :cascade do |t|
+    t.integer "item_id", null: false
+    t.integer "season_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "seasons", force: :cascade do |t|
+    t.string "season", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
