@@ -22,13 +22,11 @@ class Homepage extends React.Component {
     componentDidMount() {
         this.props.getItems();
         this.props.getSeasons();
-        this.props.getSeasonTags();
     }
 
     render() {
         const items = this.props.items || [];
         const seasons = this.props.seasons || [];
-        const seasonTags = this.props.seasonTags || [];
         const show = this.state.season ? <SeasonShow season={this.state.season} items={items} /> : null;
 
         return (
@@ -57,9 +55,9 @@ class Homepage extends React.Component {
 const msp = state => {
     const items = Object.values(state.items);
     const seasons = Object.values(state.seasons);
-    const seasonTags = Object.values(state.seasonTags);
+
     return {
-        items, seasons, seasonTags
+        items, seasons
     }
 }
 

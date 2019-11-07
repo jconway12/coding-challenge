@@ -35,4 +35,7 @@ season model is a bit unnecessary given it is an array of length 4..
 
 dont need season_tags in frontend, normalize state in the backend
 
+### Next Task
+Add season_tags to the new item form so that items can be filtered by season
+
 
