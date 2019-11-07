@@ -16,7 +16,7 @@ class SeasonShow extends React.Component {
         }
         
         return (
-            <div>
+            <div className="options">
                 <h3>{season.season} clothes</h3>
                 <ul>
                     {inSeasonItems.map((item, idx) => {

@@ -36,6 +36,7 @@ class Homepage extends React.Component {
             <div className="items-list">
                 <ul>
                     <h2>Your Clothing: </h2>
+                    <Link to="/item/new">Add New Item</Link>
                     {items.map((item, idx) => {
                         return <div className="item" key={idx}>
                             <h3>{item.title}</h3>
