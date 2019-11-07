@@ -33,4 +33,6 @@ the reason I have a season_tag table rather than a season_id or season directly 
 
 season model is a bit unnecessary given it is an array of length 4..
 
+dont need season_tags in frontend, normalize state in the backend
+
 
