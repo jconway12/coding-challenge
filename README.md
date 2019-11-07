@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Schema
+### items table:
+* id (integer)
+* title (string)
+* color (string)
+* style (string)
 
-Things you may want to cover:
+### season_tags joins table
+* id (integer)
+* item_id (integer)
+* season_id (integer)
 
-* Ruby version
+### seasons joins table
+* id (integer)
+* season (string)
 
-* System dependencies
+### if time: 
+### users table:
+auth pattern using BCrypt
+* username (string)
+* session_token (string)
+* password_digest (string)
 
-* Configuration
+### to-dos
+users should be able to view all items and sort by season
 
-* Database creation
+### if time, AWS photo storage
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
