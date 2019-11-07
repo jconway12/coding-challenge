@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: {format: :json} do 
     resources :items, only: [:show, :index, :create, :destroy]
     resources :seasons, only: [:index, :show]
-    resources :season_tags, only: [:create, :destroy]
+    resources :season_tags, only: [:create, :destroy, :index]
   end
 
 end

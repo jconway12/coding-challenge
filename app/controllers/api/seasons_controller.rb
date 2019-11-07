@@ -1,18 +1,9 @@
 class Api::SeasonsController < ApplicationController 
     def show
+        @season = Season.find(params[:id])
     end
 
     def index
-    end
-
-    def create
-    end
-
-    def destroy
-    end
-
-    private
-    def season_params
-      params.require(:season).permit(:season, :id)
+        @seasons = Season.all
     end
 end
