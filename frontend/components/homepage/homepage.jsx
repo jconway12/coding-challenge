@@ -43,9 +43,11 @@ class Homepage extends React.Component {
                     })}
                 </ul>
             </div>
+            <div className="buttons">
             {seasons.map((season, idx) => {
                return <input key={idx} type="submit" value={`See ${season.season} Clothes`} onClick={this.handleClick(season)} />
             })} 
+            </div>
             {show}
             </>
         )
